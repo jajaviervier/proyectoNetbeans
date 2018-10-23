@@ -31,7 +31,7 @@ ArrayList arreglo = new ArrayList();
     while(opcion==1){
         valorEntrada=JOptionPane.showInputDialog("Ingrese la temperatura que desea Registrar");
         consultaInsert= "INSERT INTO regtemp (temperatura) VALUES("+valorEntrada+")";
-        System.out.println("Ejecutando Query :"+valorEntrada);
+        System.out.println("Ejecutando Query de prueba :"+valorEntrada);
         conn.insertarRegistro(consultaInsert);
         opcion=Integer.parseInt(JOptionPane.showInputDialog("Desea ingresar otro registro? 1) Si  2) No") );  
      System.out.println("Opcion"+opcion);
